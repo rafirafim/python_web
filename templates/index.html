@@ -3,9 +3,31 @@
 {% block mybody%}
 <div class="card bg-primary" >
         <div class="card-body text-center  "  >
-           
+           <h2> List of students</h2>
+<table class="table">
 
-Hai
+<tr>
+    <th>  NAME </th>
+    <th>  AGE </th>
+    <th>  ADMISSION NUMBER </th>
+    <th>  PARENT NAME </th>
+</tr>
+
+
+        {% for data in studList %}
+
+        <tr>
+            <td>{{data.name}}</td>
+            <td>{{data.age}}</td>
+            <td>{{data.admno}}</td>
+            <td>{{data.parentname}}</td>
+        </tr>
+
+        {% endfor %}
+
+
+</table>
+ 
 
                 
         </div>
