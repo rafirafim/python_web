@@ -6,7 +6,7 @@ app=Flask(__name__)
 stud=Students()
 
 
-@app.route('/index')
+@app.route('/')
 def index():
     return  render_template('index.html',studList=stud)
 
